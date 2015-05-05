@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var usr: UITextField!
+    @IBOutlet weak var id: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if let u = NSUserDefaults.standardUserDefaults().valueForKey("usr") as? String{
+            usr.text = u;
+        }
+        if let i = NSUserDefaults.standardUserDefaults().valueForKey("id") as? String{
+            id.text = i;
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +29,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func login(sender: AnyObject) {
+        NSUserDefaults.standardUserDefaults().setValue(usr.text, forKey: "usr");
+        NSUserDefaults.standardUserDefaults().setValue(id.text, forKey: "id");
+    }
 }
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10BBEDE2-BB03-41FF-A816-16ED567C05CB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CCHS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B589ADB25919BA44679051E7F2864A26EC827D3D</key>
+		<string>https://github.com/csendel/CCHS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CCHS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B589ADB25919BA44679051E7F2864A26EC827D3D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/csendel/CCHS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B589ADB25919BA44679051E7F2864A26EC827D3D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B589ADB25919BA44679051E7F2864A26EC827D3D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CCHS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
