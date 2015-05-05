@@ -10,8 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var scroller: UIScrollView!
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var usr: UITextField!
     @IBOutlet weak var id: UITextField!
+    var inLogin : Bool = true;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,17 @@ class ViewController: UIViewController {
         if let i = NSUserDefaults.standardUserDefaults().valueForKey("id") as? String{
             id.text = i;
         }
+        scroller.hidden = false
+        
+        let swipeLeft = UISwipeGestureRecognizer()
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        swipeLeft.addTarget(self, action: "swipeLeft");
+        self.view.addGestureRecognizer(swipeLeft);
+        
+        let swipeRight = UISwipeGestureRecognizer()
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        swipeRight.addTarget(self, action: "swipeRight");
+        self.view.addGestureRecognizer(swipeRight);
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,6 +46,31 @@ class ViewController: UIViewController {
     @IBAction func login(sender: AnyObject) {
         NSUserDefaults.standardUserDefaults().setValue(usr.text, forKey: "usr");
         NSUserDefaults.standardUserDefaults().setValue(id.text, forKey: "id");
+        mainView.hidden = true;
+        usr.resignFirstResponder()
+        id.resignFirstResponder()
+        inLogin = false
     }
+    
+    @IBAction func skipo(sender: AnyObject) {
+        mainView.hidden = true;
+        usr.resignFirstResponder()
+        id.resignFirstResponder()
+        inLogin = false
+    }
+    
+    func swipeLeft(){
+        println("left");
+        scroller.hidden = true
+    }
+    
+    func swipeRight(){
+        print("right")
+        if !inLogin{
+            println("un-hidddenificating")
+            scroller.hidden = false
+        }
+    }
+    
 }
 
