@@ -13,6 +13,10 @@
 		EF35B2631AF8F93200E22805 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF35B2621AF8F93200E22805 /* Images.xcassets */; };
 		EF35B2661AF8F93200E22805 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF35B2641AF8F93200E22805 /* LaunchScreen.xib */; };
 		EF35B2721AF8F93200E22805 /* CCHSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B2711AF8F93200E22805 /* CCHSTests.swift */; };
+		EF35B27C1AF8F94600E22805 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF35B27B1AF8F94600E22805 /* Twitter.framework */; };
+		EF35B2811AF8F9BE00E22805 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF35B27E1AF8F9BE00E22805 /* Fabric.framework */; };
+		EF35B2821AF8F9BE00E22805 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF35B27F1AF8F9BE00E22805 /* TwitterKit.framework */; };
+		EF35B2831AF8F9BE00E22805 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF35B2801AF8F9BE00E22805 /* TwitterKitResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		EF35B26B1AF8F93200E22805 /* CCHSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCHSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF35B2701AF8F93200E22805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF35B2711AF8F93200E22805 /* CCHSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCHSTests.swift; sourceTree = "<group>"; };
+		EF35B27B1AF8F94600E22805 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		EF35B27E1AF8F9BE00E22805 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		EF35B27F1AF8F9BE00E22805 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		EF35B2801AF8F9BE00E22805 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF35B27C1AF8F94600E22805 /* Twitter.framework in Frameworks */,
+				EF35B2811AF8F9BE00E22805 /* Fabric.framework in Frameworks */,
+				EF35B2821AF8F9BE00E22805 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +70,10 @@
 		EF35B24D1AF8F93200E22805 = {
 			isa = PBXGroup;
 			children = (
+				EF35B27E1AF8F9BE00E22805 /* Fabric.framework */,
+				EF35B27F1AF8F9BE00E22805 /* TwitterKit.framework */,
+				EF35B2801AF8F9BE00E22805 /* TwitterKitResources.bundle */,
+				EF35B27B1AF8F94600E22805 /* Twitter.framework */,
 				EF35B2581AF8F93200E22805 /* CCHS */,
 				EF35B26E1AF8F93200E22805 /* CCHSTests */,
 				EF35B2571AF8F93200E22805 /* Products */,
@@ -122,6 +137,7 @@
 				EF35B2521AF8F93200E22805 /* Sources */,
 				EF35B2531AF8F93200E22805 /* Frameworks */,
 				EF35B2541AF8F93200E22805 /* Resources */,
+				EF35B27D1AF8F99600E22805 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -192,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF35B2831AF8F9BE00E22805 /* TwitterKitResources.bundle in Resources */,
 				EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */,
 				EF35B2661AF8F93200E22805 /* LaunchScreen.xib in Resources */,
 				EF35B2631AF8F93200E22805 /* Images.xcassets in Resources */,
@@ -206,6 +223,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EF35B27D1AF8F99600E22805 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 1c9e037b67c8fa167421143d24f0b1fb3ec69a60 6265cbbe38d7c5f0d2a404c877aeada170d299096524e7ad3f430b81adab80d9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF35B2521AF8F93200E22805 /* Sources */ = {
@@ -342,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +389,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
