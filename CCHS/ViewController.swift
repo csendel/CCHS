@@ -26,6 +26,8 @@ class ViewController: UIViewController {
             id.text = i;
         }
         scroller.hidden = false
+        scroller.scrollEnabled = true;
+        scroller.contentSize = CGSizeMake(scroller.frame.width, 2*scroller.frame.height);
         
         let swipeLeft = UISwipeGestureRecognizer()
         swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         swipeRight.addTarget(self, action: "swipeRight");
         self.view.addGestureRecognizer(swipeRight);
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +65,8 @@ class ViewController: UIViewController {
     
     func swipeLeft(){
         println("left");
-        scroller.hidden = true
+        if !inLogin{
+            scroller.hidden = true }
     }
     
     func swipeRight(){

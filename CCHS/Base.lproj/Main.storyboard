@@ -17,10 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-CK-PLp">
-                                <rect key="frame" x="0.0" y="0.0" width="127" height="600"/>
-                                <color key="backgroundColor" red="0.30560572029999999" green="0.36720338819999998" blue="0.64869397100000004" alpha="1" colorSpace="calibratedRGB"/>
-                            </scrollView>
                             <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-6k-UP4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
@@ -71,12 +67,24 @@
                                     <constraint firstItem="GLI-lq-Kts" firstAttribute="trailing" secondItem="fya-eC-2RS" secondAttribute="trailing" id="t6F-8A-7sy"/>
                                 </constraints>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-CK-PLp">
+                                <rect key="frame" x="0.0" y="0.0" width="67" height="600"/>
+                                <color key="backgroundColor" red="0.30560572029999999" green="0.36720338819999998" blue="0.64869397100000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="0ac-An-TMO"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yr0-ay-aO2" customClass="contentView" customModule="CCHS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="11E-t2-jLm"/>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E2O-Ye-MaP"/>
+                            <constraint firstItem="Rlt-CK-PLp" firstAttribute="height" secondItem="HC2-6k-UP4" secondAttribute="height" id="XTP-bP-T2W"/>
                             <constraint firstAttribute="trailing" secondItem="HC2-6k-UP4" secondAttribute="trailing" id="kOQ-E7-dh5"/>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yWR-q6-um0"/>
                         </constraints>
