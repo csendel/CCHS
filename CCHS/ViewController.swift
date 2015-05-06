@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var homeView: UIView!
+    @IBOutlet weak var bellScheduleView: UIView!
+    @IBOutlet weak var twitterView: UIView!
     @IBOutlet weak var scroller: UIScrollView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var usr: UITextField!
@@ -25,7 +28,7 @@ class ViewController: UIViewController {
         if let i = NSUserDefaults.standardUserDefaults().valueForKey("id") as? String{
             id.text = i;
         }
-        scroller.hidden = false
+  
         scroller.scrollEnabled = true;
         scroller.contentSize = CGSizeMake(scroller.frame.width, 2*scroller.frame.height);
         
@@ -54,6 +57,7 @@ class ViewController: UIViewController {
         usr.resignFirstResponder()
         id.resignFirstResponder()
         inLogin = false
+        
     }
     
     @IBAction func skipo(sender: AnyObject) {
@@ -77,5 +81,27 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func twitterButton(sender: AnyObject) {
+        hideAllViews()
+        twitterView.hidden = false
+    }
+    
+    @IBAction func bellButton(sender: AnyObject) {
+        hideAllViews()
+        bellScheduleView.hidden = false
+    }
+    
+    @IBAction func homeButton(sender: AnyObject) {
+        hideAllViews()
+        homeView.hidden = false
+    }
+    
+    func hideAllViews(){
+        homeView.hidden = true
+        mainView.hidden = true
+        scroller.hidden = true
+        twitterView.hidden = true
+        bellScheduleView.hidden = true
+    }
 }
 

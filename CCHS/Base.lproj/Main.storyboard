@@ -17,6 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-JH-ctO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
+                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="d25-bA-s67" secondAttribute="centerX" id="hfm-XN-UuG"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzE-fU-idM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
+                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="DLZ-La-1XU" secondAttribute="centerX" id="coQ-sa-dZl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-E6-jop">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
+                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="uHG-Su-187" secondAttribute="centerX" id="PoX-8i-9b9"/>
+                                </constraints>
+                            </view>
                             <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-6k-UP4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
@@ -67,32 +112,79 @@
                                     <constraint firstItem="GLI-lq-Kts" firstAttribute="trailing" secondItem="fya-eC-2RS" secondAttribute="trailing" id="t6F-8A-7sy"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-CK-PLp">
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-CK-PLp">
                                 <rect key="frame" x="0.0" y="0.0" width="67" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ff-lJ-PNo">
+                                        <rect key="frame" x="4" y="78" width="59" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="iLZ-ez-aJd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                        <state key="normal" title="Twitter">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="twitterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izO-b3-84d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHp-4n-fRY">
+                                        <rect key="frame" x="4" y="25" width="59" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="pGH-fM-nCe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                        <state key="normal" title="Home">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="homeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qwn-rn-U4V"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyn-QU-Rty">
+                                        <rect key="frame" x="-13" y="131" width="92" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Mew-yu-sIM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="15"/>
+                                        <state key="normal" title="Bells">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bellButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJO-jz-b6e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.30560572029999999" green="0.36720338819999998" blue="0.64869397100000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="0ac-An-TMO"/>
+                                    <constraint firstItem="Eyn-QU-Rty" firstAttribute="top" secondItem="1ff-lJ-PNo" secondAttribute="bottom" constant="23" id="JxB-ef-uRG"/>
+                                    <constraint firstItem="1ff-lJ-PNo" firstAttribute="leading" secondItem="wHp-4n-fRY" secondAttribute="leading" id="NY2-rA-9NR"/>
+                                    <constraint firstItem="1ff-lJ-PNo" firstAttribute="centerX" secondItem="Eyn-QU-Rty" secondAttribute="centerX" id="WwW-KE-BhQ"/>
+                                    <constraint firstItem="1ff-lJ-PNo" firstAttribute="trailing" secondItem="wHp-4n-fRY" secondAttribute="trailing" id="bZ6-h7-LZA"/>
+                                    <constraint firstItem="1ff-lJ-PNo" firstAttribute="top" secondItem="wHp-4n-fRY" secondAttribute="bottom" constant="23" id="mZV-mW-YkN"/>
                                 </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yr0-ay-aO2" customClass="contentView" customModule="CCHS" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="11E-t2-jLm"/>
+                            <constraint firstItem="HC2-6k-UP4" firstAttribute="height" secondItem="Rlt-CK-PLp" secondAttribute="height" id="5M8-cL-DGP"/>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="E2O-Ye-MaP"/>
-                            <constraint firstItem="Rlt-CK-PLp" firstAttribute="height" secondItem="HC2-6k-UP4" secondAttribute="height" id="XTP-bP-T2W"/>
                             <constraint firstAttribute="trailing" secondItem="HC2-6k-UP4" secondAttribute="trailing" id="kOQ-E7-dh5"/>
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yWR-q6-um0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bellScheduleView" destination="MTr-JH-ctO" id="TOF-4Z-dw6"/>
+                        <outlet property="homeView" destination="GZ0-E6-jop" id="fCN-OH-hnn"/>
                         <outlet property="id" destination="fya-eC-2RS" id="e68-Ow-pXp"/>
                         <outlet property="mainView" destination="HC2-6k-UP4" id="Cll-rr-tie"/>
                         <outlet property="scroller" destination="Rlt-CK-PLp" id="6qm-C7-gff"/>
+                        <outlet property="twitterView" destination="bzE-fU-idM" id="YlQ-Lc-1eL"/>
                         <outlet property="usr" destination="GLI-lq-Kts" id="nyr-uv-VwD"/>
                     </connections>
                 </viewController>
