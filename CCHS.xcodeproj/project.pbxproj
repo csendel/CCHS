@@ -452,6 +452,7 @@
 				EF35B2771AF8F93200E22805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF35B2781AF8F93200E22805 /* Build configuration list for PBXNativeTarget "CCHSTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +461,7 @@
 				EF35B27A1AF8F93200E22805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
