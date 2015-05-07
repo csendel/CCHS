@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         if let i = NSUserDefaults.standardUserDefaults().valueForKey("id") as? String{
             id.text = i;
         }
+        
+        let controller : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("home") as! UIViewController;
+        homeView.addSubview(controller.view);
   
         scroller.scrollEnabled = true;
         scroller.contentSize = CGSizeMake(scroller.frame.width, 2*scroller.frame.height);
@@ -76,6 +79,7 @@ class ViewController: UIViewController {
         println("left");
         if !inLogin{
             scroller.hidden = true }
+        homeView.frame = CGRectMake(homeView.frame.origin.x - scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
     }
     
     func swipeRight(){
@@ -84,6 +88,7 @@ class ViewController: UIViewController {
             println("un-hidddenificating")
             scroller.hidden = false
         }
+        homeView.frame = CGRectMake(homeView.frame.origin.x + scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
     }
     
     @IBAction func twitterButton(sender: AnyObject) {
