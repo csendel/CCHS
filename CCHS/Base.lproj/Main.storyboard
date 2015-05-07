@@ -17,50 +17,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-JH-ctO">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-E6-jop">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
-                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
+                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-Le-5kJ">
+                                        <rect key="frame" x="46" y="64" width="309" height="246"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </webView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="d25-bA-s67" secondAttribute="centerX" id="hfm-XN-UuG"/>
-                                </constraints>
+                                <color key="backgroundColor" red="1" green="0.90212973198704605" blue="0.8805250658522179" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzE-fU-idM">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzE-fU-idM">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
-                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
+                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="DLZ-La-1XU" secondAttribute="centerX" id="coQ-sa-dZl"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-E6-jop">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
-                                        <rect key="frame" x="191" y="15" width="218" height="63"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="uHG-Su-187" secondAttribute="centerX" id="PoX-8i-9b9"/>
-                                </constraints>
                             </view>
                             <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-6k-UP4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -167,6 +150,35 @@
                                     <constraint firstItem="1ff-lJ-PNo" firstAttribute="top" secondItem="wHp-4n-fRY" secondAttribute="bottom" constant="23" id="mZV-mW-YkN"/>
                                 </constraints>
                             </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-JH-ctO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
+                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
+                                        <rect key="frame" x="46" y="63" width="308" height="513"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
+                                                <rect key="frame" x="10" y="8" width="290" height="181"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stormSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-GQ-AVX">
+                                                <rect key="frame" x="8" y="197" width="290" height="181"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assemblySchedule" translatesAutoresizingMaskIntoConstraints="NO" id="w0N-ev-9ul">
+                                                <rect key="frame" x="8" y="386" width="290" height="181"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collabSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-fi-Qgu">
+                                                <rect key="frame" x="8" y="575" width="290" height="181"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -183,6 +195,8 @@
                         <outlet property="homeView" destination="GZ0-E6-jop" id="fCN-OH-hnn"/>
                         <outlet property="id" destination="fya-eC-2RS" id="e68-Ow-pXp"/>
                         <outlet property="mainView" destination="HC2-6k-UP4" id="Cll-rr-tie"/>
+                        <outlet property="powerSchoolView" destination="6Kj-Le-5kJ" id="ysW-Y0-28W"/>
+                        <outlet property="scheduleScroller" destination="aux-VQ-U9J" id="YIU-Y1-Gfm"/>
                         <outlet property="scroller" destination="Rlt-CK-PLp" id="6qm-C7-gff"/>
                         <outlet property="twitterView" destination="bzE-fU-idM" id="YlQ-Lc-1eL"/>
                         <outlet property="usr" destination="GLI-lq-Kts" id="nyr-uv-VwD"/>
@@ -193,4 +207,10 @@
             <point key="canvasLocation" x="317" y="463"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="assemblySchedule" width="500" height="379"/>
+        <image name="collabSchedule" width="501" height="370"/>
+        <image name="regularSchedule" width="500" height="389"/>
+        <image name="stormSchedule" width="501" height="400"/>
+    </resources>
 </document>

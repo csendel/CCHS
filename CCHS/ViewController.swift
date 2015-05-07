@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var powerSchoolView: UIWebView!
+    @IBOutlet weak var scheduleScroller: UIScrollView!
     @IBOutlet weak var homeView: UIView!
     @IBOutlet weak var bellScheduleView: UIView!
     @IBOutlet weak var twitterView: UIView!
@@ -41,6 +43,11 @@ class ViewController: UIViewController {
         swipeRight.direction = UISwipeGestureRecognizerDirection.Right
         swipeRight.addTarget(self, action: "swipeRight");
         self.view.addGestureRecognizer(swipeRight);
+        
+        scheduleScroller.scrollEnabled = true
+        scheduleScroller.contentSize = CGSizeMake(scheduleScroller.frame.width, scheduleScroller.frame.height * 3/2)
+        var req = NSURLRequest(URL: NSURL(fileURLWithPath: "www.apple.com")!)
+        powerSchoolView.loadRequest(req);
         
         
     }
