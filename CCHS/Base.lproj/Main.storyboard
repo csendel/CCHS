@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,42 +14,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GZ0-E6-jop">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
-                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-Le-5kJ">
-                                        <rect key="frame" x="46" y="64" width="309" height="246"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </webView>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.90212973198704605" blue="0.8805250658522179" alpha="0.0" colorSpace="calibratedRGB"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bzE-fU-idM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
-                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <view alpha="0.79999999999999982" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC2-6k-UP4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLI-lq-Kts">
-                                        <rect key="frame" x="180" y="247" width="241" height="30"/>
+                                        <rect key="frame" x="68" y="247" width="241" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="241" id="aF1-8Y-jo8"/>
                                         </constraints>
@@ -57,12 +33,12 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Student ID #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fya-eC-2RS">
-                                        <rect key="frame" x="180" y="286" width="241" height="30"/>
+                                        <rect key="frame" x="68" y="286" width="241" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRw-2p-vrB">
-                                        <rect key="frame" x="269" y="324" width="62" height="30"/>
+                                        <rect key="frame" x="157" y="324" width="62" height="30"/>
                                         <gestureRecognizers/>
                                         <state key="normal" title="Continue">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,7 +72,7 @@
                                 </constraints>
                             </view>
                             <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlt-CK-PLp">
-                                <rect key="frame" x="0.0" y="0.0" width="67" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="67" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ff-lJ-PNo">
                                         <rect key="frame" x="4" y="78" width="59" height="30"/>
@@ -150,35 +126,6 @@
                                     <constraint firstItem="1ff-lJ-PNo" firstAttribute="top" secondItem="wHp-4n-fRY" secondAttribute="bottom" constant="23" id="mZV-mW-YkN"/>
                                 </constraints>
                             </scrollView>
-                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTr-JH-ctO">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
-                                        <rect key="frame" x="90" y="15" width="218" height="63"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
-                                        <rect key="frame" x="46" y="63" width="308" height="513"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
-                                                <rect key="frame" x="10" y="8" width="290" height="181"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stormSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-GQ-AVX">
-                                                <rect key="frame" x="8" y="197" width="290" height="181"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assemblySchedule" translatesAutoresizingMaskIntoConstraints="NO" id="w0N-ev-9ul">
-                                                <rect key="frame" x="8" y="386" width="290" height="181"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collabSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-fi-Qgu">
-                                                <rect key="frame" x="8" y="575" width="290" height="181"/>
-                                            </imageView>
-                                        </subviews>
-                                    </scrollView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -190,21 +137,122 @@
                             <constraint firstItem="HC2-6k-UP4" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="yWR-q6-um0"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="bellScheduleView" destination="MTr-JH-ctO" id="TOF-4Z-dw6"/>
                         <outlet property="homeView" destination="GZ0-E6-jop" id="fCN-OH-hnn"/>
                         <outlet property="id" destination="fya-eC-2RS" id="e68-Ow-pXp"/>
                         <outlet property="mainView" destination="HC2-6k-UP4" id="Cll-rr-tie"/>
                         <outlet property="powerSchoolView" destination="6Kj-Le-5kJ" id="ysW-Y0-28W"/>
                         <outlet property="scheduleScroller" destination="aux-VQ-U9J" id="YIU-Y1-Gfm"/>
                         <outlet property="scroller" destination="Rlt-CK-PLp" id="6qm-C7-gff"/>
-                        <outlet property="twitterView" destination="bzE-fU-idM" id="YlQ-Lc-1eL"/>
                         <outlet property="usr" destination="GLI-lq-Kts" id="nyr-uv-VwD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="317" y="463"/>
+        </scene>
+        <!--twitter-->
+        <scene sceneID="q6W-BP-Kk4">
+            <objects>
+                <viewController storyboardIdentifier="twitter" title="twitter" id="WuD-IU-OgX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pbx-6f-Jpm"/>
+                        <viewControllerLayoutGuide type="bottom" id="m2s-JC-lec"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCq-VR-Twv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
+                                <rect key="frame" x="45" y="75" width="218" height="63"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gj-yV-H7E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752.5" y="97.5"/>
+        </scene>
+        <!--bell-->
+        <scene sceneID="cKA-BS-Ys6">
+            <objects>
+                <viewController storyboardIdentifier="bell" title="bell" id="FR2-0Y-cvW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edQ-VB-AaZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Tf-9R-dnG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OME-Ka-fee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
+                                <rect key="frame" x="93" y="122" width="218" height="63"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
+                                <rect key="frame" x="48" y="-103" width="308" height="513"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
+                                        <rect key="frame" x="10" y="8" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stormSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-GQ-AVX">
+                                        <rect key="frame" x="8" y="197" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assemblySchedule" translatesAutoresizingMaskIntoConstraints="NO" id="w0N-ev-9ul">
+                                        <rect key="frame" x="8" y="386" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collabSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-fi-Qgu">
+                                        <rect key="frame" x="8" y="575" width="290" height="181"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ESj-6K-lDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752.5" y="845.5"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="fRW-rc-AMM">
+            <objects>
+                <viewController storyboardIdentifier="home" title="home" id="oxf-eg-rqz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="me2-jd-JaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="By2-RZ-mxa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="438-kt-oeb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
+                                <rect key="frame" x="78" y="0.0" width="218" height="63"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-Le-5kJ">
+                                <rect key="frame" x="33" y="162" width="309" height="246"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVj-GV-pRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.5" y="487.5"/>
         </scene>
     </scenes>
     <resources>

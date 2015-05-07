@@ -13,8 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var powerSchoolView: UIWebView!
     @IBOutlet weak var scheduleScroller: UIScrollView!
     @IBOutlet weak var homeView: UIView!
-    @IBOutlet weak var bellScheduleView: UIView!
-    @IBOutlet weak var twitterView: UIView!
     @IBOutlet weak var scroller: UIScrollView!
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var usr: UITextField!
@@ -44,10 +42,10 @@ class ViewController: UIViewController {
         swipeRight.addTarget(self, action: "swipeRight");
         self.view.addGestureRecognizer(swipeRight);
         
-        scheduleScroller.scrollEnabled = true
-        scheduleScroller.contentSize = CGSizeMake(scheduleScroller.frame.width, scheduleScroller.frame.height * 3/2)
-        var req = NSURLRequest(URL: NSURL(fileURLWithPath: "www.apple.com")!)
-        powerSchoolView.loadRequest(req);
+        //scheduleScroller.scrollEnabled = true
+        //scheduleScroller.contentSize = CGSizeMake(scheduleScroller.frame.width, scheduleScroller.frame.height * 3/2)
+        //var req = NSURLRequest(URL: NSURL(fileURLWithPath: "www.apple.com")!)
+        //powerSchoolView.loadRequest(req);
         
         
     }
@@ -89,26 +87,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func twitterButton(sender: AnyObject) {
-        hideAllViews()
-        twitterView.hidden = false
+        handleViewSwitch("twitter");
     }
     
     @IBAction func bellButton(sender: AnyObject) {
-        hideAllViews()
-        bellScheduleView.hidden = false
+       handleViewSwitch("bell");
+       //bellScheduleView.hidden = false
     }
     
     @IBAction func homeButton(sender: AnyObject) {
-        hideAllViews()
-        homeView.hidden = false
+        handleViewSwitch("home");
+        //homeView.hidden = false
     }
     
-    func hideAllViews(){
-        homeView.hidden = true
-        mainView.hidden = true
-        scroller.hidden = true
-        twitterView.hidden = true
-        bellScheduleView.hidden = true
+    func handleViewSwitch(str: NSString){
+        for view in homeView.subviews{
+            view.removeFromSuperview()
+        }
+        let controller : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier(str as String) as! UIViewController;
+        homeView.addSubview(controller.view);
     }
 }
 
