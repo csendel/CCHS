@@ -78,17 +78,21 @@ class ViewController: UIViewController {
     func swipeLeft(){
         println("left");
         if !inLogin{
-            scroller.hidden = true }
-        homeView.frame = CGRectMake(homeView.frame.origin.x - scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+            if(!scroller.hidden){
+                homeView.frame = CGRectMake(homeView.frame.origin.x - scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+                scroller.hidden = true
+            }
+        }
     }
     
     func swipeRight(){
         print("right")
         if !inLogin{
-            println("un-hidddenificating")
-            scroller.hidden = false
+            if(scroller.hidden){
+                homeView.frame = CGRectMake(homeView.frame.origin.x + scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+               scroller.hidden = false
+            }
         }
-        homeView.frame = CGRectMake(homeView.frame.origin.x + scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
     }
     
     @IBAction func twitterButton(sender: AnyObject) {
