@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var powerSchoolView: UIWebView!
     @IBOutlet weak var scheduleScroller: UIScrollView!
     @IBOutlet weak var homeView: UIView!
     @IBOutlet weak var scroller: UIScrollView!
@@ -18,9 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var usr: UITextField!
     @IBOutlet weak var id: UITextField!
     var inLogin : Bool = true;
+    var inHome : Bool = true;
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        skipo(NSObject());
         
         if let u = NSUserDefaults.standardUserDefaults().valueForKey("usr") as? String{
             usr.text = u;
@@ -29,8 +31,8 @@ class ViewController: UIViewController {
             id.text = i;
         }
         
-        let controller : UIViewController = self.storyboard!.instantiateViewControllerWithIdentifier("home") as! UIViewController;
-        homeView.addSubview(controller.view);
+        handleViewSwitch("home")
+        inHome = true;
   
         scroller.scrollEnabled = true;
         scroller.contentSize = CGSizeMake(scroller.frame.width, 2*scroller.frame.height);
@@ -47,8 +49,6 @@ class ViewController: UIViewController {
         
         //scheduleScroller.scrollEnabled = true
         //scheduleScroller.contentSize = CGSizeMake(scheduleScroller.frame.width, scheduleScroller.frame.height * 3/2)
-        //var req = NSURLRequest(URL: NSURL(fileURLWithPath: "www.apple.com")!)
-        //powerSchoolView.loadRequest(req);
         
         
     }
@@ -79,7 +79,9 @@ class ViewController: UIViewController {
         println("left");
         if !inLogin{
             if(!scroller.hidden){
-                homeView.frame = CGRectMake(homeView.frame.origin.x - scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+                if(!inHome){
+                    homeView.frame = CGRectMake(homeView.frame.origin.x - scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+                }
                 scroller.hidden = true
             }
         }
@@ -89,7 +91,9 @@ class ViewController: UIViewController {
         print("right")
         if !inLogin{
             if(scroller.hidden){
-                homeView.frame = CGRectMake(homeView.frame.origin.x + scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+                if(!inHome){
+                    homeView.frame = CGRectMake(homeView.frame.origin.x + scroller.frame.width, homeView.frame.origin.y, homeView.frame.width, homeView.frame.height);
+                }
                scroller.hidden = false
             }
         }
@@ -106,10 +110,12 @@ class ViewController: UIViewController {
     
     @IBAction func homeButton(sender: AnyObject) {
         handleViewSwitch("home");
+        inHome = true
         //homeView.hidden = false
     }
     
     func handleViewSwitch(str: NSString){
+        inHome = false
         for view in homeView.subviews{
             view.removeFromSuperview()
         }

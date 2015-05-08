@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -142,7 +142,6 @@
                         <outlet property="homeView" destination="GZ0-E6-jop" id="fCN-OH-hnn"/>
                         <outlet property="id" destination="fya-eC-2RS" id="e68-Ow-pXp"/>
                         <outlet property="mainView" destination="HC2-6k-UP4" id="Cll-rr-tie"/>
-                        <outlet property="powerSchoolView" destination="6Kj-Le-5kJ" id="ysW-Y0-28W"/>
                         <outlet property="scheduleScroller" destination="aux-VQ-U9J" id="YIU-Y1-Gfm"/>
                         <outlet property="scroller" destination="Rlt-CK-PLp" id="6qm-C7-gff"/>
                         <outlet property="usr" destination="GLI-lq-Kts" id="nyr-uv-VwD"/>
@@ -165,13 +164,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admin Twitter Feeds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLZ-La-1XU">
-                                <rect key="frame" x="78" y="20" width="218" height="30"/>
+                                <rect key="frame" x="141" y="20" width="218" height="30"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -191,31 +190,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
+                                <rect key="frame" x="97" y="91" width="306" height="484"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
+                                        <rect key="frame" x="8" y="-21" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stormSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-GQ-AVX">
+                                        <rect key="frame" x="6" y="168" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assemblySchedule" translatesAutoresizingMaskIntoConstraints="NO" id="w0N-ev-9ul">
+                                        <rect key="frame" x="6" y="357" width="290" height="181"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collabSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-fi-Qgu">
+                                        <rect key="frame" x="6" y="546" width="290" height="181"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Standard Bell Schedules" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d25-bA-s67">
-                                <rect key="frame" x="93" y="122" width="218" height="63"/>
+                                <rect key="frame" x="141" y="20" width="218" height="63"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
-                                <rect key="frame" x="48" y="-103" width="308" height="513"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
-                                        <rect key="frame" x="10" y="8" width="290" height="181"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stormSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="eqC-GQ-AVX">
-                                        <rect key="frame" x="8" y="197" width="290" height="181"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assemblySchedule" translatesAutoresizingMaskIntoConstraints="NO" id="w0N-ev-9ul">
-                                        <rect key="frame" x="8" y="386" width="290" height="181"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collabSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="kBs-fi-Qgu">
-                                        <rect key="frame" x="8" y="575" width="290" height="181"/>
-                                    </imageView>
-                                </subviews>
-                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -226,7 +225,7 @@
         <!--home-->
         <scene sceneID="fRW-rc-AMM">
             <objects>
-                <viewController storyboardIdentifier="home" title="home" id="oxf-eg-rqz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" title="home" id="oxf-eg-rqz" customClass="welcomeView" customModule="CCHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="me2-jd-JaM"/>
                         <viewControllerLayoutGuide type="bottom" id="By2-RZ-mxa"/>
@@ -235,20 +234,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-Le-5kJ">
+                                <rect key="frame" x="24" y="62" width="327" height="585"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                            </webView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to the CCHS App!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHG-Su-187">
-                                <rect key="frame" x="78" y="0.0" width="218" height="63"/>
+                                <rect key="frame" x="78" y="10" width="218" height="63"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kj-Le-5kJ">
-                                <rect key="frame" x="0.0" y="50" width="375" height="623"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="powerSchoolView" destination="6Kj-Le-5kJ" id="WGl-3L-ZPh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVj-GV-pRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
