@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09C3481AFCF5C700F55F08 /* welcomeView.swift */; };
-		3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */; };
 		EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25B1AF8F93200E22805 /* AppDelegate.swift */; };
 		EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25D1AF8F93200E22805 /* ViewController.swift */; };
 		EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF35B25F1AF8F93200E22805 /* Main.storyboard */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		3F09C3481AFCF5C700F55F08 /* welcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = welcomeView.swift; path = ../welcomeView.swift; sourceTree = "<group>"; };
-		3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bellViewController.swift; sourceTree = "<group>"; };
 		EF35B2561AF8F93200E22805 /* CCHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF35B25A1AF8F93200E22805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF35B25B1AF8F93200E22805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				3F09C3481AFCF5C700F55F08 /* welcomeView.swift */,
 				EF35B25B1AF8F93200E22805 /* AppDelegate.swift */,
 				EF35B25D1AF8F93200E22805 /* ViewController.swift */,
-				3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */,
 				EF35B25F1AF8F93200E22805 /* Main.storyboard */,
 				EF35B2621AF8F93200E22805 /* Images.xcassets */,
 				EF35B2641AF8F93200E22805 /* LaunchScreen.xib */,
@@ -252,7 +249,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */,
-				3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */,
 				EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */,
 				3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */,
 			);
