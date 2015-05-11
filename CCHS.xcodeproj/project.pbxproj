@@ -8,17 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09C3481AFCF5C700F55F08 /* welcomeView.swift */; };
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-		3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */; };
-=======
-		EF29A3591AFD3A8A00C9B990 /* TTDetailTweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF29A3531AFD3A8A00C9B990 /* TTDetailTweetView.m */; };
-		EF29A35A1AFD3A8A00C9B990 /* TTWarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF29A3551AFD3A8A00C9B990 /* TTWarningView.m */; };
-		EF29A35B1AFD3A8A00C9B990 /* TTWarningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF29A3561AFD3A8A00C9B990 /* TTWarningView.xib */; };
-		EF29A35C1AFD3A8A00C9B990 /* TTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF29A3581AFD3A8A00C9B990 /* TTWebViewController.m */; };
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25B1AF8F93200E22805 /* AppDelegate.swift */; };
 		EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25D1AF8F93200E22805 /* ViewController.swift */; };
 		EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF35B25F1AF8F93200E22805 /* Main.storyboard */; };
@@ -43,21 +32,6 @@
 
 /* Begin PBXFileReference section */
 		3F09C3481AFCF5C700F55F08 /* welcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = welcomeView.swift; path = ../welcomeView.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-		3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bellViewController.swift; sourceTree = "<group>"; };
-=======
-		EF29A3511AFD3A8900C9B990 /* CCHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCHS-Bridging-Header.h"; sourceTree = "<group>"; };
-		EF29A3521AFD3A8A00C9B990 /* TTDetailTweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDetailTweetView.h; sourceTree = "<group>"; };
-		EF29A3531AFD3A8A00C9B990 /* TTDetailTweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDetailTweetView.m; sourceTree = "<group>"; };
-		EF29A3541AFD3A8A00C9B990 /* TTWarningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWarningView.h; sourceTree = "<group>"; };
-		EF29A3551AFD3A8A00C9B990 /* TTWarningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWarningView.m; sourceTree = "<group>"; };
-		EF29A3561AFD3A8A00C9B990 /* TTWarningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTWarningView.xib; sourceTree = "<group>"; };
-		EF29A3571AFD3A8A00C9B990 /* TTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWebViewController.h; sourceTree = "<group>"; };
-		EF29A3581AFD3A8A00C9B990 /* TTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWebViewController.m; sourceTree = "<group>"; };
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 		EF35B2561AF8F93200E22805 /* CCHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF35B25A1AF8F93200E22805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF35B25B1AF8F93200E22805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,13 +94,6 @@
 		EF35B2581AF8F93200E22805 /* CCHS */ = {
 			isa = PBXGroup;
 			children = (
-				EF29A3521AFD3A8A00C9B990 /* TTDetailTweetView.h */,
-				EF29A3531AFD3A8A00C9B990 /* TTDetailTweetView.m */,
-				EF29A3541AFD3A8A00C9B990 /* TTWarningView.h */,
-				EF29A3551AFD3A8A00C9B990 /* TTWarningView.m */,
-				EF29A3561AFD3A8A00C9B990 /* TTWarningView.xib */,
-				EF29A3571AFD3A8A00C9B990 /* TTWebViewController.h */,
-				EF29A3581AFD3A8A00C9B990 /* TTWebViewController.m */,
 				3F09C3481AFCF5C700F55F08 /* welcomeView.swift */,
 				EF35B25B1AF8F93200E22805 /* AppDelegate.swift */,
 				EF35B25D1AF8F93200E22805 /* ViewController.swift */,
@@ -142,7 +109,6 @@
 			isa = PBXGroup;
 			children = (
 				EF35B25A1AF8F93200E22805 /* Info.plist */,
-				EF29A3511AFD3A8900C9B990 /* CCHS-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,7 +215,6 @@
 				EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */,
 				EF35B2661AF8F93200E22805 /* LaunchScreen.xib in Resources */,
 				EF35B2631AF8F93200E22805 /* Images.xcassets in Resources */,
-				EF29A35B1AFD3A8A00C9B990 /* TTWarningView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,18 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */,
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-				3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */,
-=======
-				EF29A3591AFD3A8A00C9B990 /* TTDetailTweetView.m in Sources */,
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 				EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */,
-				EF29A35A1AFD3A8A00C9B990 /* TTWarningView.m in Sources */,
 				3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */,
-				EF29A35C1AFD3A8A00C9B990 /* TTWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +379,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -432,8 +386,6 @@
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CCHS/CCHS-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -441,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -449,7 +400,6 @@
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "CCHS/CCHS-Bridging-Header.h";
 			};
 			name = Release;
 		};
