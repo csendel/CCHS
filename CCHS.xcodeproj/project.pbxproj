@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F09C3481AFCF5C700F55F08 /* welcomeView.swift */; };
+		3F7DE8CB1B00E3A000DE26B9 /* TTDetailTweetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8BE1B00E3A000DE26B9 /* TTDetailTweetView.m */; };
+		3F7DE8D01B00E3A000DE26B9 /* TTWarningView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8C71B00E3A000DE26B9 /* TTWarningView.m */; };
+		3F7DE8D11B00E3A000DE26B9 /* TTWarningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F7DE8C81B00E3A000DE26B9 /* TTWarningView.xib */; };
+		3F7DE8D21B00E3A000DE26B9 /* TTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8CA1B00E3A000DE26B9 /* TTWebViewController.m */; };
+		3F7DE8D61B00E4A900DE26B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8D41B00E4A900DE26B9 /* AppDelegate.m */; };
+		3F7DE8D71B00E4A900DE26B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8D51B00E4A900DE26B9 /* main.m */; };
+		3F7DE8DA1B00E54400DE26B9 /* TTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7DE8D91B00E54400DE26B9 /* TTMainViewController.m */; };
 		3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */; };
-		EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25B1AF8F93200E22805 /* AppDelegate.swift */; };
 		EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF35B25D1AF8F93200E22805 /* ViewController.swift */; };
 		EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF35B25F1AF8F93200E22805 /* Main.storyboard */; };
 		EF35B2631AF8F93200E22805 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF35B2621AF8F93200E22805 /* Images.xcassets */; };
@@ -33,10 +39,22 @@
 
 /* Begin PBXFileReference section */
 		3F09C3481AFCF5C700F55F08 /* welcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = welcomeView.swift; path = ../welcomeView.swift; sourceTree = "<group>"; };
+		3F7DE8BC1B00E38100DE26B9 /* CCHS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCHS-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F7DE8BD1B00E3A000DE26B9 /* TTDetailTweetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTDetailTweetView.h; sourceTree = "<group>"; };
+		3F7DE8BE1B00E3A000DE26B9 /* TTDetailTweetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTDetailTweetView.m; sourceTree = "<group>"; };
+		3F7DE8C61B00E3A000DE26B9 /* TTWarningView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWarningView.h; sourceTree = "<group>"; };
+		3F7DE8C71B00E3A000DE26B9 /* TTWarningView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWarningView.m; sourceTree = "<group>"; };
+		3F7DE8C81B00E3A000DE26B9 /* TTWarningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TTWarningView.xib; sourceTree = "<group>"; };
+		3F7DE8C91B00E3A000DE26B9 /* TTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTWebViewController.h; sourceTree = "<group>"; };
+		3F7DE8CA1B00E3A000DE26B9 /* TTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTWebViewController.m; sourceTree = "<group>"; };
+		3F7DE8D31B00E4A900DE26B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F7DE8D41B00E4A900DE26B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F7DE8D51B00E4A900DE26B9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F7DE8D81B00E54400DE26B9 /* TTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMainViewController.h; sourceTree = "<group>"; };
+		3F7DE8D91B00E54400DE26B9 /* TTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMainViewController.m; sourceTree = "<group>"; };
 		3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bellViewController.swift; sourceTree = "<group>"; };
 		EF35B2561AF8F93200E22805 /* CCHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF35B25A1AF8F93200E22805 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF35B25B1AF8F93200E22805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF35B25D1AF8F93200E22805 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF35B2601AF8F93200E22805 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF35B2621AF8F93200E22805 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -96,14 +114,26 @@
 		EF35B2581AF8F93200E22805 /* CCHS */ = {
 			isa = PBXGroup;
 			children = (
+				3F7DE8D81B00E54400DE26B9 /* TTMainViewController.h */,
+				3F7DE8D91B00E54400DE26B9 /* TTMainViewController.m */,
+				3F7DE8D31B00E4A900DE26B9 /* AppDelegate.h */,
+				3F7DE8D41B00E4A900DE26B9 /* AppDelegate.m */,
+				3F7DE8D51B00E4A900DE26B9 /* main.m */,
+				3F7DE8BD1B00E3A000DE26B9 /* TTDetailTweetView.h */,
+				3F7DE8BE1B00E3A000DE26B9 /* TTDetailTweetView.m */,
+				3F7DE8C61B00E3A000DE26B9 /* TTWarningView.h */,
+				3F7DE8C71B00E3A000DE26B9 /* TTWarningView.m */,
+				3F7DE8C81B00E3A000DE26B9 /* TTWarningView.xib */,
+				3F7DE8C91B00E3A000DE26B9 /* TTWebViewController.h */,
+				3F7DE8CA1B00E3A000DE26B9 /* TTWebViewController.m */,
 				3F09C3481AFCF5C700F55F08 /* welcomeView.swift */,
-				EF35B25B1AF8F93200E22805 /* AppDelegate.swift */,
 				EF35B25D1AF8F93200E22805 /* ViewController.swift */,
 				3FF0561D1B00E0DB0071D8F3 /* bellViewController.swift */,
 				EF35B25F1AF8F93200E22805 /* Main.storyboard */,
 				EF35B2621AF8F93200E22805 /* Images.xcassets */,
 				EF35B2641AF8F93200E22805 /* LaunchScreen.xib */,
 				EF35B2591AF8F93200E22805 /* Supporting Files */,
+				3F7DE8BC1B00E38100DE26B9 /* CCHS-Bridging-Header.h */,
 			);
 			path = CCHS;
 			sourceTree = "<group>";
@@ -218,6 +248,7 @@
 				EF35B2611AF8F93200E22805 /* Main.storyboard in Resources */,
 				EF35B2661AF8F93200E22805 /* LaunchScreen.xib in Resources */,
 				EF35B2631AF8F93200E22805 /* Images.xcassets in Resources */,
+				3F7DE8D11B00E3A000DE26B9 /* TTWarningView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7DE8CB1B00E3A000DE26B9 /* TTDetailTweetView.m in Sources */,
+				3F7DE8D21B00E3A000DE26B9 /* TTWebViewController.m in Sources */,
+				3F7DE8D01B00E3A000DE26B9 /* TTWarningView.m in Sources */,
+				3F7DE8D61B00E4A900DE26B9 /* AppDelegate.m in Sources */,
 				EF35B25E1AF8F93200E22805 /* ViewController.swift in Sources */,
 				3FF0561E1B00E0DB0071D8F3 /* bellViewController.swift in Sources */,
-				EF35B25C1AF8F93200E22805 /* AppDelegate.swift in Sources */,
+				3F7DE8DA1B00E54400DE26B9 /* TTMainViewController.m in Sources */,
+				3F7DE8D71B00E4A900DE26B9 /* main.m in Sources */,
 				3F09C3491AFCF5C700F55F08 /* welcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -390,6 +427,8 @@
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHS/CCHS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -397,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -404,6 +444,7 @@
 				INFOPLIST_FILE = CCHS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CCHS/CCHS-Bridging-Header.h";
 			};
 			name = Release;
 		};

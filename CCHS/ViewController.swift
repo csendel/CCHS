@@ -47,6 +47,8 @@ class ViewController: UIViewController {
         swipeRight.addTarget(self, action: "swipeRight");
         self.view.addGestureRecognizer(swipeRight);
         
+        
+        
         //scheduleScroller.scrollEnabled = true
         //scheduleScroller.contentSize = CGSizeMake(scheduleScroller.frame.width, scheduleScroller.frame.height * 3/2)
         
@@ -101,6 +103,7 @@ class ViewController: UIViewController {
     
     @IBAction func twitterButton(sender: AnyObject) {
         handleViewSwitch("twitter");
+        inHome = true
     }
     
     @IBAction func bellButton(sender: AnyObject) {
