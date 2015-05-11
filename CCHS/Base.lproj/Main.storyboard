@@ -181,7 +181,7 @@
         <!--bell-->
         <scene sceneID="cKA-BS-Ys6">
             <objects>
-                <viewController storyboardIdentifier="bell" title="bell" id="FR2-0Y-cvW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="bell" title="bell" id="FR2-0Y-cvW" customClass="bellViewController" customModule="CCHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="edQ-VB-AaZ"/>
                         <viewControllerLayoutGuide type="bottom" id="8Tf-9R-dnG"/>
@@ -190,8 +190,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
-                                <rect key="frame" x="97" y="91" width="306" height="484"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aux-VQ-U9J">
+                                <rect key="frame" x="97" y="91" width="306" height="547"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="regularSchedule" translatesAutoresizingMaskIntoConstraints="NO" id="OU2-5w-vwk">
                                         <rect key="frame" x="8" y="-21" width="290" height="181"/>
@@ -217,6 +217,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="scroller" destination="aux-VQ-U9J" id="2sd-z3-JNO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ESj-6K-lDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
