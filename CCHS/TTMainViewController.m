@@ -58,7 +58,7 @@ static NSString * const TweetTableReuseIdentifier = @"TweetCell";
         } else {
             NSLog(@"error: \(error.localizedDescription)");
         }
-
+        
     }
      ];
 
@@ -198,6 +198,7 @@ static NSString * const TweetTableReuseIdentifier = @"TweetCell";
     TWTRTweet *tweet = self.tweets[indexPath.row];
     TWTRTweetTableViewCell *cell = (TWTRTweetTableViewCell *)[tableView dequeueReusableCellWithIdentifier:TweetTableReuseIdentifier forIndexPath:indexPath];
     [cell configureWithTweet:tweet];
+    NSLog(@"Loading Tweet into Cell");
     cell.tweetView.delegate = self;
     
     return cell;
